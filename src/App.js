@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Class_VuAnhDuong from './components/Class_VuAnhDuong';
+import Func_JSX_VuAnhDuong from './components/Func_JSX_VuAnhDuong';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+        <h1>Demo JSX</h1>
+        {/* function component demo */}
+        <Func_JSX_VuAnhDuong/>
+        <Func_JSX_VuAnhDuong fullname="Vu Anh Duong" age="20"/>
+
+        <Class_VuAnhDuong/>
+        <hr/>
+        <Class_VuAnhDuong info="Hoc reactjs" time="11"/>
+    </section>
   );
 }
 
